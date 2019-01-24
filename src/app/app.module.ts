@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductsComponent } from './application/products/products.component';
 import { CustomersComponent } from './application/customers/customers.component';
-import { NavMenuComponent } from './application/nav-menu/nav-menu.component';
 
 import { ToastrModule } from 'ngx-toastr';
 
@@ -15,8 +14,7 @@ import { ToastrModule } from 'ngx-toastr';
   declarations: [
     AppComponent,
     ProductsComponent,
-    CustomersComponent,
-    NavMenuComponent
+    CustomersComponent
   ],
   imports: [
     BrowserModule,
@@ -26,9 +24,6 @@ import { ToastrModule } from 'ngx-toastr';
       closeButton:true
     }),
     BrowserAnimationsModule
-  ],
-  exports:[
-    NavMenuComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
